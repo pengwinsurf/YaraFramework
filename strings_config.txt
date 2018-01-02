@@ -1,0 +1,34 @@
+'\.\.', -5
+'(WinRAR\\SFX)', -4
+'[A-Za-z]:\\', 2
+'(\.exe|\.pdb|\.scr|\.log|\.cfg|\.txt|\.dat|\.msi|\.com|\.bat|\.dll|\.pdb|\.vbs|\.tmp|\.sys|\.ps1)', 4
+'(cmd.exe|system32|users|Documents and|SystemRoot|Grant|hello|password|process|log)', 5
+'(ftp|irc|smtp|command|GET|POST|Agent|tor2web|HEAD)', 5
+'(error|http|closed|fail|version|proxy)', 3
+'(Mozilla|MSIE|Windows NT|Macintosh|Gecko|Opera|User\-Agent)', 5
+'(TEMP|Temporary|Appdata|Recycler)', 4
+'(scan|sniff|poison|intercept|fake|spoof|sweep|dump|flood|inject|forward|scan|vulnerable|credentials|creds|coded|p0c|Content|host)', 5
+'(address|port|listen|remote|local|process|service|mutex|pipe|frame|key|lookup|connection)', 3
+'([C-Zc-z]:\\)', 4
+'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b', 5
+'(coded | c0d3d |cr3w\b|Coded by |codedby)', 7
+'\.[a-zA-Z]{3}\b', 3
+'^[A-Z]{6,}$', 3
+'^[a-z]{6,}$', 2
+'^[a-z\s]{6,}$', 2
+'^[A-Z][a-z]{5,}$', 2
+'(%[a-z][:\-,;]|\\\\%s|\\\\[A-Z0-9a-z%]+\\[A-Z0-9a-z%]+)', 3
+'(thawte|trustcenter|signing|class|crl|CA|certificate|assembly)', -4
+'( \-[a-z]{,2}[\s]?[0-9]?| /[a-z]+[\s]?[\w]*)', 4
+'([a-zA-Z]:|^|%)\\[A-Za-z]{4,30}\\', 4
+'^[^\\]+\.(exe|com|scr|bat|sys)$', 4
+'(yyyy|hh:mm|dd/mm|mm/dd|%s:%s:)', 3
+'[^A-Za-z](%s|%d|%i|%02d|%04d|%2d|%3s)[^A-Za-z]', 3
+'(cmd|com|pipe|tmp|temp|recycle|bin|secret|private|AppData|driver|config)', 3
+'(execute|run|system|shell|root|cimv2|login|exec|stdin|read|process|netuse|script|share)', 3
+'(user|pass|login|logon|token|cookie|creds|hash|ticket|NTLM|LMHASH|kerberos|spnego|session|identif|account|login|auth|privilege)', 3
+'(\.[a-z]/[^/]+\.txt|)', 3
+'(spy|logger|dark|cryptor|RAT\b|eye|comet|evil|xtreme|poison|meterpreter|metasploit)', 5
+'[\\](users|profiles|username|benutzer|Documents and Settings|Utilisateurs|Utenti|'Usuários)[\\]', 3
+'^[A-Z][a-z]+[0-9]+$', 1
+'(implant)', 1
